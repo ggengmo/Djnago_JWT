@@ -19,7 +19,7 @@ print(response.json()['access_token'])
 
 token = response.json()['access_token']
 
-# step2 로그인한 사용자만 들어갈 수 있는 URL에 접속
+# step2 로그인한 사용자만 들어갈 수 있는 URL에 접속 후
 # headers에 token을 넣어서 보냅니다.
 header = {
     'Authorization': 'Bearer ' + token.replace('m', 'n')
